@@ -1,0 +1,240 @@
+*{
+    
+    margin:0;
+    padding:0;
+
+}
+body{
+    background:rgb(31, 131, 219);
+    color:white;
+     
+}
+header{
+background:white;
+    color:black;
+    padding:20px 30px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.header-work{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header-work .fa-bars,.fa-music{
+    font-size:35px;
+    color:rgb(31, 131, 219);
+    transition:all 1s ease;
+}
+.fa-bars{
+    color:rgb(31, 131, 219);
+      transition:all 1s ease;
+}
+.header-work .fa-bars:hover{
+color:white;
+background:rgb(31, 131, 219);
+padding:6px 8px;
+}
+
+.covverall-musiccontainer{
+   display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    max-width:100%;
+  
+ flex-direction: column;}
+.covverall-musiccontainer h1{
+padding-top:80px;
+    font-size:28px;
+    text-transform: capitalize;
+    margin:40px 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    word-spacing:2px;
+    letter-spacing:2px;
+}
+.main-music{
+      display:flex;
+       flex-direction: column;
+       align-items:center;
+       margin-bottom:17px;
+}
+.main-music img{
+    width:350px;
+    border-radius:20px;
+    height:300px;
+    margin-bottom:40px;
+}
+.artist-name{
+    text-transform: capitalize;
+    letter-spacing:1px;
+    font-size:26px;
+}
+.music-title{
+    text-transform: capitalize;
+    letter-spacing:1px;
+    word-spacing:2px;
+    font-size:23px;
+}
+
+input{
+    -webkit-appearance:none;
+width:100%;
+height:10px;
+border-radius:8px;
+background-color: rgb(204, 204, 216);
+cursor:pointer;
+}
+.music-content{
+    margin-bottom:20px;
+text-align:center;
+}
+.music-content h3{
+     margin-bottom:15px;
+}
+.music-content h2{
+margin-bottom:0px;
+}
+input::-webkit-slider-thumb{
+    appearance: none;
+    background:rgb(15, 49, 80);
+    width:20px;
+    height:10px;
+    border-radius:40%;
+cursor:pointer;
+}
+.forward-btn,.pause,.play,.prev-btn{
+    cursor:pointer;
+    padding:10px 15px;
+    border-radius:10px;
+    border:none;
+    outline:none;
+    transition:all 1s ease;
+}
+.forward-btn:hover{
+   background:rgb(15, 49, 80);
+   color:white;
+}
+.prev-btn:hover{
+ background:rgb(15, 49, 80);
+   color:white;
+}
+.play{
+    display:block;
+    background:rgb(15, 49, 80);
+   color:white;
+}
+.play:hover{
+      background:white;
+   color: rgb(15, 49, 80);
+}
+.pause{
+    display:none;
+    background:rgb(15, 49, 80);
+   color:white;
+}
+.pause:hover{
+         background:white;
+   color: rgb(15, 49, 80);
+}
+.x2{
+padding:16px 21px;
+}
+.fa-play,.fa-pause{
+    font-size:20px;
+}
+.fa-forward,.fa-barkward{
+    font-size:18px;
+    transition:all 1s ease;
+    cursor:pointer;
+}
+
+.play-area{
+    display:flex; 
+    align-items:center;
+    width:200px;
+    justify-content:space-between;
+}
+.timer-area{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+width:350px;
+margin-bottom:30px;
+}
+
+.display{
+visibility:hidden;
+height:0px;
+transition:all 1s ease-in-out;
+}
+
+.list h4{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.each-music{
+    display:flex;
+    align-items:center;
+}
+.each-music .fa{
+    margin-right:30px;
+}
+
+.fa-bars{
+    cursor:pointer;
+}
+
+.list{
+    position:absolute;
+    height: 60vh;
+    background: white;
+    top:60px;
+    left:0;
+    right:0;
+    padding:25px 30px;
+    transition:all 1s ease;
+}
+@media(max-width:700px){
+   .covverall-musiccontainer h1{
+     font-size:28px;
+         margin:25px 10px;
+   } 
+   .main-music img{
+    width:260px;
+     height:175px;
+   }
+   .forward-btn,.pause,.play,.prev-btn{
+       padding:10px 15px;
+   }
+   .x2{
+    padding:14px 17px;
+   }
+   .artist-name{
+     font-size:23px;
+   }
+   .music-title{
+     font-size:20px;
+   }
+   .timer-area{
+    width:200px;
+   }
+.header-work .fa{
+    font-size:22px;
+    color:rgb(31, 131, 219);
+}
+.list{
+    position:absolute;
+    height: 60vh;
+    background: white;
+    top:60px;
+    left:0;
+    right:0;
+    padding:25px 30px;
+    transition:all 1s ease;
+}
+}
