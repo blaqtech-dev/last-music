@@ -19,19 +19,30 @@ let currentTime=document.querySelector('.current-time')
 let duration=document.querySelector('.duration')
 let list=document.querySelector('.list')
 let faShow=document.querySelector('.fa-bars')
-
+let eachMusic=document.querySelectorAll('.fa-bars')
 let audio=document.createElement('audio')
 
 
 faShow.addEventListener('click',()=>{
-    if(list.classList.contains('display')){
+    listAppear()
+})
+
+eachMusic.forEach((btn)=>[
+btn.addEventListener('click',()=>{
+   listAppear()
+})
+])
+
+
+function listAppear(){
+if(list.classList.contains('display')){
 list.classList.remove('display')
 
     }
     else{
         list.classList.add('display')
     }
-})
+}
 
 
 let currentSongIndex=0

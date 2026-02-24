@@ -165,11 +165,20 @@ padding:16px 21px;
 width:350px;
 margin-bottom:30px;
 }
-
+.list{
+    position:absolute;
+    height: 60vh;
+    background: white;
+    top:60px;
+    left:0;
+    right:0;
+    padding:25px 30px;
+    transition:all 1s ease;
+}
 .display{
 visibility:hidden;
 height:0px;
-transition:all 1s ease-in-out;
+transition:all 1s ease;
 }
 
 .list h4{
@@ -189,20 +198,12 @@ transition:all 1s ease-in-out;
     cursor:pointer;
 }
 
-.list{
-    position:absolute;
-    height: 60vh;
-    background: white;
-    top:60px;
-    left:0;
-    right:0;
-    padding:25px 30px;
-    transition:all 1s ease;
-}
+
 @media(max-width:700px){
    .covverall-musiccontainer h1{
      font-size:28px;
          margin:25px 10px;
+         padding-top:25px;
    } 
    .main-music img{
     width:260px;
@@ -227,14 +228,5 @@ transition:all 1s ease-in-out;
     font-size:22px;
     color:rgb(31, 131, 219);
 }
-.list{
-    position:absolute;
-    height: 60vh;
-    background: white;
-    top:60px;
-    left:0;
-    right:0;
-    padding:25px 30px;
-    transition:all 1s ease;
-}
+
 }
